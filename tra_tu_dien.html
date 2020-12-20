@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Tra từ điển</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Google Fonts -->
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik"> -->
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <!-- CSS Global Icons -->
+    <link rel="stylesheet" href="assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="assets/vendor/animate.css">
+    <link rel="stylesheet" href="assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="assets/vendor/hamburgers/hamburgers.min.css">
+
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="assets/css/unify-core.css">
+    <link rel="stylesheet" href="assets/css/unify-components.css">
+    <link rel="stylesheet" href="assets/css/unify-globals.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- CSS style  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-color: #fdfdfd !important;">
+    <main>
+        <!-- Header -->
+        <header id="js-header" class="u-header u-header--static g-brd-gray-light-v4">
+            <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+                <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+                    <div class="container">
+                        <!-- Responsive Toggle Button -->
+                        <button
+                            class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0"
+                            type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar"
+                            data-toggle="collapse" data-target="#navBar">
+                            <span class="hamburger hamburger--slider">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <!-- End Responsive Toggle Button -->
+
+                        <!-- Logo -->
+                        <a href="index.html" class="navbar-brand d-flex">
+                            <img src="logo.jpg" alt="Trang chủ" style="height: 35px" title="Trang chủ">
+                        </a>
+                        <!-- End Logo -->
+
+                        <!-- Navigation -->
+                        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg"
+                            id="navBar">
+                            <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+                                <!-- Trang chu -->
+                                <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+                                    <a href="index.html" class="nav-link g-py-7 g-px-0">Trang chủ</a>
+                                </li>
+                                <!-- End Trang chu -->
+
+                                <!-- Hoc -->
+                                <li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn"
+                                    data-animation-out="fadeOut">
+                                    <a id="nav-link--hoc" class="nav-link g-py-7 g-px-0" href="hocGoList.html"
+                                        aria-haspopup="true" aria-expanded="false"
+                                        aria-controls="nav-submenu--hoc">Học</a>
+
+                                    <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
+                                        id="nav-submenu--hoc" aria-labelledby="nav-link--hoc">
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="hocGoPhim.html">Học gõ phím</a>
+                                        </li>
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="hocGoAmTiet.html">Học gõ âm tiết</a>
+                                        </li>
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="hocGoTu.html">Học gõ từ</a>
+                                        </li>
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="hocGoCau.html">Học gõ câu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- End Hoc -->
+
+                                <!-- Luyen tap -->
+                                <li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn"
+                                    data-animation-out="fadeOut">
+                                    <a id="nav-link--luyenTap" class="nav-link g-py-7 g-px-0" href="luyenTapList.html"
+                                        aria-haspopup="true" aria-expanded="false"
+                                        aria-controls="nav-submenu--luyenTap">Luyện tập</a>
+
+                                    <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
+                                        id="nav-submenu--luyenTap" aria-labelledby="nav-link--luyenTap">
+                                        <li class="dropdown-item ">
+                                          <a class="nav-link" href="luyenTap.html">Luyện gõ phím</a>
+                                        </li>
+                                        <li class="dropdown-item hs-has-sub-menu ">
+                                            <a id="nav-link--features--luyenTu" class="nav-link"
+                                                href="luyenTapList.html" aria-haspopup="true" aria-expanded="false"
+                                                aria-controls="nav-submenu--features--luyenTu">Luyện gõ từ</a>
+
+                                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2"
+                                                id="nav-submenu--features--luyenTu"
+                                                aria-labelledby="nav-link--features--luyenTu">
+                                                <li class="dropdown-item ">
+                                                    <a class="nav-link" href="luyenTap.html">Từ đơn</a>
+                                                </li>
+                                                <li class="dropdown-item ">
+                                                    <a class="nav-link" href="luyenTap.html">Từ nhiều âm tiết</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="luyenTap.html">Luyện gõ câu</a>
+                                        </li>
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="luyenTap.html">Luyện gõ văn bản</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- End Luyen tap -->
+
+                                <!-- Thi dau -->
+                                <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+                                    <a href="thiDau.html" class="nav-link g-py-7 g-px-0">Thi đấu</a>
+                                </li>
+                                <!-- End Thi dau -->
+
+                                <!-- Tra từ điển -->
+                                <li class="nav-item  g-mx-10--lg g-mx-15--xl active">
+                                    <a href="tra_tu_dien.html" class="nav-link g-py-7 g-px-0">Tra từ điển</a>
+                                </li>
+                                <!-- End Tra từ điển -->
+
+                                <!-- Thống kê -->
+                                <li class="nav-item  g-mx-10--lg g-mx-15--x">
+                                    <a href="thongKe.html" class="nav-link g-py-7 g-px-0">Thống kê</a>
+                                </li>
+                                <!-- End Thống kê -->
+
+                                <!-- Info -->
+
+                                <li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn"
+                                    data-animation-out="fadeOut">
+                                    <a id="nav-link--hoc" class="nav-link g-py-0 g-px-0" href="#" aria-haspopup="true"
+                                        aria-expanded="false" aria-controls="nav-submenu--hoc"><img
+                                            class="img-fluid rounded-circle" src="assets/img/avt.jpg" alt="Avatar"
+                                            style="height: 35px; width: 35px;">Toky Toky</a>
+
+                                    <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
+                                        id="nav-submenu--hoc" aria-labelledby="nav-link--hoc">
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="#">Thông tin cá nhân</a>
+                                        </li>
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="#">Cài đặt</a>
+                                        </li>
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="#">Đổi mật khẩu</a>
+                                        </li>
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="index.html">Đăng xuất</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- End Info -->
+                            </ul>
+                        </div>
+                        <!-- End Navigation -->
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- tra tu dien -->
+        <div class="container">
+            <table class="mt-3">
+                <tbody>
+                    <tr>
+                        <td>
+                            <h2 id="start">ToKy</h2><strong>Bộ gõ nhanh Tiếng Việt - Vietnamese Fast Input
+                                Engine</strong>
+                        </td>
+                        <td class="pl-4"><img src="logo.jpg" alt="ToKy" class="img-thumbnail" style="height: 35px">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- tu dien -->
+            <div class="row">
+                <div class="col-12 col-sm-12 order-3 order-sm-3">
+
+                    <div class="row">
+                        <div class="col-12 order-1 order-sm-0">
+                            <ul>
+                                <li>Bạn không cần tải xuống bộ gõ. Và có thể dùng ở máy tính, điện thoại, máy tính bảng
+                                    (computer, phone, tablet).</li>
+                                <li>Hãy gõ tiếng Việt trong khung trắng, theo cách gõ bình thường với Kiểu gõ dấu ToKy,
+                                    hoặc gõ nhanh hơn rất nhiều nếu kết hợp với Cách gõ Chữ ToKy (xem cách gõ ở hình kế
+                                    bên).</li>
+
+                                <li>Gõ xong, nhấp nút Sao chép để copy những gì gõ được và dán qua nơi khác như: email,
+                                    Microsoft Word, diễn đàn...</li>
+                            </ul>
+
+                        </div>
+                        <div class="col-12 col-sm-6 order-0 order-sm-1">
+                            <div>
+                                <div class="mb-2">
+                                    <div>
+                                        <button type="button" class="btnTextAreaSKey btn btn-info btn-sm mr-2"
+                                            data-clipboard-action="copy" data-clipboard-target="#textAreaSKey">Sao
+                                            chép</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Xóa</button>
+                                    </div>
+                                </div>
+                                <div tabindex="-1">
+                                    <div tabindex="-1">
+                                        <textarea id="textAreaSKey" rows="24" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <script src="/static/js/clipboard.min.js"></script>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 order-2 order-sm-2">
+
+                            <div class="row">
+                                <div class="col">
+                                    <table class="table table-sm table-responsive table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="3" class="text-center">Gõ bình thường với</td>
+                                            </tr>
+                                            <tr class="table-warning text-center font-weight-bold">
+                                                <td colspan="3"><a href="#" style="text-decoration: none; ">Kiểu gõ dấu
+                                                        Toky</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-info">
+                                                <td class="text-center">Dấu-Chữ</td>
+                                                <td class="text-center">Gõ</td>
+                                                <td>Ví dụ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">sắc</td>
+                                                <td class="table-warning text-center font-weight-bold">1</td>
+                                                <td><b>a1</b> → á</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">huyền</td>
+                                                <td class="table-warning text-center font-weight-bold">2</td>
+                                                <td><b>a2</b> → à</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">hỏi</td>
+                                                <td class="table-warning text-center font-weight-bold">3</td>
+                                                <td><b>a3</b> → ả</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ngã</td>
+                                                <td class="table-warning text-center font-weight-bold">4</td>
+                                                <td><b>a4</b> → ã</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">nặng</td>
+                                                <td class="table-warning text-center font-weight-bold">5</td>
+                                                <td><b>a5</b> → ạ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">â</td>
+                                                <td class="table-warning text-center font-weight-bold">6</td>
+                                                <td><b>6n</b> → ân</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ê</td>
+                                                <td class="table-warning text-center font-weight-bold">7</td>
+                                                <td><b>7n</b> → ên</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ô</td>
+                                                <td class="table-warning text-center font-weight-bold">8</td>
+                                                <td><b>8n</b> → ôn</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ă</td>
+                                                <td class="table-warning text-center font-weight-bold">9</td>
+                                                <td><b>9n</b> → ăn</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ư</td>
+                                                <td class="table-warning text-center font-weight-bold">[</td>
+                                                <td><b>c[</b> → cư</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ơ</td>
+                                                <td class="table-warning text-center font-weight-bold">]</td>
+                                                <td><b>c]</b> → cơ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">đ</td>
+                                                <td class="table-warning text-center font-weight-bold">d</td>
+                                                <td><b>da</b> → đa</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">d</td>
+                                                <td class="table-warning text-center font-weight-bold">z</td>
+                                                <td><b>za</b> → da</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">6, 7, 8, 9, [, ], z</td>
+                                                <td class="table-warning text-center font-weight-bold">gõ lặp</td>
+                                                <td><b>66, 77, [[, ]], zz</b> → 6, 7, [, ], z</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Tắt dấu</td>
+                                                <td class="table-warning text-center font-weight-bold">\</td>
+                                                <td><b>a\2</b> → a2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col">
+                                    <table class="table table-sm table-responsive table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="3" class="text-center">Hoặc gõ nhanh hơn nếu kết hợp với
+                                                </td>
+                                            </tr>
+                                            <tr class="table-warning text-center font-weight-bold">
+                                                <td colspan="3"><a href="hocGoList.html"
+                                                        style="text-decoration: none; ">Cách gõ Chữ ToKy</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">Không gõ dấu sắc ở từ có chữ cuối là: c, p, t, ch.
+                                                    <br>ChuVietNhanhKey tự thêm vào.
+                                                    <br>Ví dụ: <b>boc</b> → bóc</td>
+                                            </tr>
+                                            <tr class="table-info">
+                                                <td class="text-center">Phụ âm đầu chữ</td>
+                                                <td class="text-center">Gõ</td>
+                                                <td>Ví dụ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ph</td>
+                                                <td class="text-center font-weight-bold table-warning">f</td>
+                                                <td><b>fa</b> → pha</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">qu</td>
+                                                <td class="text-center font-weight-bold table-warning">q</td>
+                                                <td><b>qa</b> → qua</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">k</td>
+                                                <td class="text-center font-weight-bold table-warning">c</td>
+                                                <td><b>ce</b> → ke</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">kh</td>
+                                                <td class="text-center font-weight-bold table-warning">k</td>
+                                                <td><b>ki</b> → khi</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">gi</td>
+                                                <td class="text-center font-weight-bold table-warning">j</td>
+                                                <td><b>ja</b> → gia</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">gh</td>
+                                                <td class="text-center font-weight-bold table-warning">g</td>
+                                                <td><b>gi</b> → ghi</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ng-ngh</td>
+                                                <td class="text-center font-weight-bold table-warning">w</td>
+                                                <td><b>wa</b> → nga
+                                                    <br><b>wi</b> → nghi</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ch</td>
+                                                <td class="text-center font-weight-bold table-warning">2</td>
+                                                <td><b>2a</b> → cha</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">nh</td>
+                                                <td class="text-center font-weight-bold table-warning">3</td>
+                                                <td><b>3a</b> → nha</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">th</td>
+                                                <td class="text-center font-weight-bold table-warning">4</td>
+                                                <td><b>4a</b> → tha</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">tr</td>
+                                                <td class="text-center font-weight-bold table-warning">5</td>
+                                                <td><b>5a</b> → tra</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                            </tr>
+                                            <tr class="table-info">
+                                                <td class="text-center">Phụ âm cuối chữ</td>
+                                                <td class="text-center">Gõ</td>
+                                                <td>Ví dụ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ng</td>
+                                                <td class="text-center font-weight-bold table-warning">g</td>
+                                                <td><b>lag</b> → lang</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">nh</td>
+                                                <td class="text-center font-weight-bold table-warning">h</td>
+                                                <td><b>ah</b> → anh</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ch</td>
+                                                <td class="text-center font-weight-bold table-warning">k</td>
+                                                <td><b>ak</b> → ách</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <table class="table table-sm table-responsive table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="5" class="text-center">52 vần "Nguyên âm ghép + chữ cái
+                                                    cuối"
+                                                    <br><b>Rút gọn nguyên âm ghép. Đồng thời, thay chữ cái cuối</b>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-info">
+                                                <td class="text-center">Nguyên âm ghép</td>
+                                                <td class="text-center">Gõ</td>
+                                                <td class="text-center">Chữ cái cuối</td>
+                                                <td class="text-center">Gõ</td>
+                                                <td>Ví dụ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">uyê</td>
+                                                <td class="text-center font-weight-bold table-warning">y</td>
+                                                <td class="text-center">p</td>
+                                                <td class="text-center font-weight-bold table-warning">f</td>
+                                                <td><b>tyd, yl</b> → tuyết, uyên</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">iê, yê</td>
+                                                <td class="text-center font-weight-bold table-warning">i</td>
+                                                <td class="text-center">t</td>
+                                                <td class="text-center font-weight-bold table-warning">d</td>
+                                                <td><b>id, tif, il, liv, wiz, iw</b> → yết, tiếp, yên, liêm, nghiêng,
+                                                    yêu</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">uô</td>
+                                                <td class="text-center font-weight-bold table-warning">u</td>
+                                                <td class="text-center">c</td>
+                                                <td class="text-center font-weight-bold table-warning">s</td>
+                                                <td><b>sud, kuz</b> → suốt, khuông</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">ươ</td>
+                                                <td class="text-center font-weight-bold table-warning">ư ([)</td>
+                                                <td class="text-center">n</td>
+                                                <td class="text-center font-weight-bold table-warning">l</td>
+                                                <td><b>b[s, f[z</b> → bước, phương</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">uâ</td>
+                                                <td class="text-center font-weight-bold table-warning">â (6)</td>
+                                                <td class="text-center">m</td>
+                                                <td class="text-center font-weight-bold table-warning">v</td>
+                                                <td><b>6d, k6j</b> → uất, khuây</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">uơ</td>
+                                                <td class="text-center font-weight-bold table-warning">ơ (])</td>
+                                                <td class="text-center">i, y</td>
+                                                <td class="text-center font-weight-bold table-warning">j</td>
+                                                <td><b>h]d5</b> → huợt</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">oă</td>
+                                                <td class="text-center font-weight-bold table-warning">ă (9)</td>
+                                                <td class="text-center">ng</td>
+                                                <td class="text-center font-weight-bold table-warning">z</td>
+                                                <td><b>w9s, x9l</b> → ngoắc, xoăn</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">oe</td>
+                                                <td class="text-center font-weight-bold table-warning">e</td>
+                                                <td class="text-center">o, u</td>
+                                                <td class="text-center font-weight-bold table-warning">w</td>
+                                                <td><b>hel</b> → hoen</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">oa</td>
+                                                <td class="text-center font-weight-bold table-warning">o</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><b>kod, koj</b> → khoát, khoai</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">vần oay</td>
+                                                <td class="text-center font-weight-bold table-warning">a</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><b>laj haj</b> → loay hoay</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- End tra tu dien -->
+        <!-- Footer -->
+        <div id="contacts-section" class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Content -->
+                    <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Về chúng tôi</h2>
+                        </div>
+
+                        <p>KHMT-03 K62 Số 1 Đại Cồ Việt
+                        </p>
+                    </div>
+                    <!-- End Footer Content -->
+
+                    <!-- Footer Content -->
+                    <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Thông tin khác</h2>
+                        </div>
+
+                        <nav class="text-uppercase1">
+                            <ul class="list-unstyled g-mt-minus-10 mb-0">
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Về chúng
+                                            tôi</a>
+                                        <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                                    </h4>
+                                </li>
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Giới thiệu
+                                            Toky</a>
+                                        <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                                    </h4>
+                                </li>
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Dịch vụ
+                                            ngoài</a>
+                                        <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                                    </h4>
+                                </li>
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Quảng cáo</a>
+                                        <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                                    </h4>
+                                </li>
+                                <li class="g-pos-rel g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Liên hệ</a>
+                                        <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                                    </h4>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- End Footer Content -->
+
+                    <!-- Footer Content -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Thông tin liên hệ</h2>
+                        </div>
+
+                        <address class="g-bg-no-repeat g-font-size-12 mb-0"
+                            style="background-image: url(assets/img/maps/map2.png);">
+                            <!-- Location -->
+                            <div class="d-flex g-mb-20">
+                                <div class="g-mr-10">
+                                    <span
+                                        class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                        <i class="fa fa-map-marker"></i>
+                                    </span>
+                                </div>
+                                <p class="mb-0">Đại học Bách Khoa Hà Nội, <br> Số 1 Đại Cồ Việt</p>
+                            </div>
+                            <!-- End Location -->
+
+                            <!-- Phone -->
+                            <div class="d-flex g-mb-20">
+                                <div class="g-mr-10">
+                                    <span
+                                        class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                </div>
+                                <p class="mb-0">(+84)123456789 <br> (+84)1234686888</p>
+                            </div>
+                            <!-- End Phone -->
+
+                            <!-- Email and Website -->
+                            <div class="d-flex g-mb-20">
+                                <div class="g-mr-10">
+                                    <span
+                                        class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                        <i class="fa fa-globe"></i>
+                                    </span>
+                                </div>
+                                <p class="mb-0">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover"
+                                        href="mailto:info@hust.edu.vn">info@hust.edu.vn</a>
+                                    <br>
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover"
+                                        href="https://www.youtube.com/">www.youtube.com</a>
+                                </p>
+                            </div>
+                            <!-- End Email and Website -->
+                        </address>
+                    </div>
+                    <!-- End Footer Content -->
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+
+        <!-- Copyright Footer -->
+        <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
+                        <div class="d-lg-flex">
+                            <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2020 &copy; Mọi quyền
+                                lợi</small>
+                            <ul class="u-list-inline">
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Chính sách bảo
+                                        mật</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Điều khoản sử
+                                        dụng</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Giấy phép</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Hỗ trợ 24/7</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 align-self-center">
+                        <ul class="list-inline text-center text-md-right mb-0">
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top"
+                                title="Facebook">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top"
+                                title="Skype">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top"
+                                title="Linkedin">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top"
+                                title="Pinterest">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top"
+                                title="Twitter">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top"
+                                title="Dribbble">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Copyright Footer -->
+        <a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position='{
+     "bottom": 15,
+     "right": 15
+   }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+            <i class="hs-icon hs-icon-arrow-top"></i>
+        </a>
+    </main>
+
+    <div class="u-outer-spaces-helper"></div>
+
+
+    <!-- JS Global Compulsory -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="assets/vendor/popper.js/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+
+    <!-- JS Implementing Plugins -->
+    <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script src="assets/vendor/gmaps/gmaps.min.js"></script>
+    <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+    <!-- JS Unify -->
+    <script src="assets/js/hs.core.js"></script>
+    <script src="assets/js/components/hs.header.js"></script>
+    <script src="assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="assets/js/components/hs.tabs.js"></script>
+    <script src="assets/js/components/hs.cubeportfolio.js"></script>
+    <script src="assets/js/components/hs.popup.js"></script>
+    <script src="assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        $(document).on('ready', function () {
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+            // initialization of popups
+            $.HSCore.components.HSPopup.init('.js-fancybox');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+        });
+
+        $(window).on('load', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+
+            // initialization of cubeportfolio
+            $.HSCore.components.HSCubeportfolio.init('.cbp');
+        });
+
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+    </script>
+
+
+    <div id="resolutionCaution" class="text-left g-max-width-600 g-bg-white g-pa-20" style="display: none;">
+        <button type="button" class="close" onclick="Custombox.modal.close();">
+            <i class="hs-icon hs-icon-close"></i>
+        </button>
+        <h4 class="g-mb-20">Screen resolution less than 1400px</h4>
+    </div>
+
+    <div id="copyModal" class="text-left modal-demo g-bg-white g-color-black g-pa-20" style="display: none;"></div>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/vendor/chosen/chosen.css">
+    <link rel="stylesheet" href="assets/vendor/prism/themes/prism.css">
+    <link rel="stylesheet" href="assets/vendor/custombox/custombox.min.css">
+    <link rel="stylesheet" href="assets/style-switcher/vendor/spectrum/spectrum.css">
+    <link rel="stylesheet" href="assets/style-switcher/vendor/spectrum/themes/sp-dark.css">
+    <link rel="stylesheet" href="assets/style-switcher/style-switcher.css">
+    <!-- End CSS -->
+
+    <!-- Scripts -->
+    <script src="assets/vendor/chosen/chosen.jquery.js"></script>
+    <script src="assets/vendor/image-select/src/ImageSelect.jquery.js"></script>
+    <script src="assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/vendor/custombox/custombox.min.js"></script>
+    <script src="assets/vendor/clipboard/dist/clipboard.min.js"></script>
+
+    <!-- Prism -->
+    <script src="assets/vendor/prism/prism.js"></script>
+    <script src="assets/vendor/prism/components/prism-markup.min.js"></script>
+    <script src="assets/vendor/prism/components/prism-css.min.js"></script>
+    <script src="assets/vendor/prism/components/prism-clike.min.js"></script>
+    <script src="assets/vendor/prism/components/prism-javascript.min.js"></script>
+    <script src="assets/vendor/prism/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="assets/vendor/prism/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <!-- End Prism -->
+
+    <script src="assets/js/components/hs.scrollbar.js"></script>
+    <script src="assets/js/components/hs.select.js"></script>
+    <script src="assets/js/components/hs.modal-window.js"></script>
+    <script src="assets/js/components/hs.markup-copy.js"></script>
+
+    <script src="assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+    <script src="assets/style-switcher/vendor/spectrum/spectrum.js"></script>
+    <script src="assets/style-switcher/style-switcher.js"></script>
+    <!-- End Scripts -->
+    <!-- End Style Switcher -->
+
+</body>
+
+</html>
